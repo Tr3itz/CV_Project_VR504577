@@ -1,0 +1,10 @@
+cost: params
+epochs: 100
+label_smoothing: 0.1
+loss: L2-CrossEntropy
+lr: 0.2
+momentum: 0.9
+regularizer: TWR
+target: 756140
+target_gamma: 1.0e-08
+weight_decay: 2.0e-05

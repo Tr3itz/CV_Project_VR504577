@@ -1,0 +1,10 @@
+cost: flops
+epochs: 100
+label_smoothing: 0.1
+loss: L2-CrossEntropy
+lr: 0.2
+momentum: 0.9
+regularizer: TWR
+target: 40000000
+target_gamma: 2.0e-10
+weight_decay: 2.0e-05

@@ -1,0 +1,7 @@
+epochs: 100
+label_smoothing: 0.1
+loss: L2-CrossEntropy
+lr: 0.2
+momentum: 0.9
+regularizer: None
+weight_decay: 2.0e-05
