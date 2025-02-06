@@ -204,14 +204,6 @@ class SuperNet(nn.Module):
         else:
             target_cost = torch.zeros(1, dtype=torch.float, requires_grad=True).squeeze()
 
-        # Compute the selected cost for each SuperModule
-        # for path in self.paths:
-        #     super_module = self.seed.get_submodule(path)
-        #     if stable:
-        #         stable_cost = stable_cost + super_module._stable_weighted_cost(device, type_cost)
-        #     if target is not None:
-        #         target_cost = target_cost + super_module._target_weighted_cost(device, type_cost)
-
         # Soft-Constraint: compare with a target quantity
         if target is not None:
             target_cost = torch.max(torch.zeros(1, dtype=torch.float, requires_grad=True).squeeze(), target_cost - target)
