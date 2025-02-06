@@ -1,3 +1,14 @@
+# Project structure
+Python modules:
+* `LocalDNAS.py`: impementation of both the SuperNet method and cost-aware regularizers
+* `alternatives.py`: alternative modules considered in supermodules
+* `utils.py`: utility module
+
+Jupyter notebooks:
+* `SuperNet_MBNV3.ipynb`: training strategy for MBNV3 on ImageNet-100 and application of SuperNet to MBNV3 targeting SE modules
+* `SuperNet_regularizers.ipynb`: cost-aware optimizations of SuperNet on MBNV3 by considering cost-aware regularizers on number of parameters and FLOPs
+* `model_comparison.ipynb`: comparison between standard MBNV3 and models achieved with the application of SuperNet 
+
 # Run experiments
 ## 1 - Create conda enviroment
 1. Create and activate the conda environment:
